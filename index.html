@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- Cuerpo de la pagina -->
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="caja">
+            <a href=""><img class="logo-img" src="imagenes/Logo.png" alt=""></a>
+            <h2>ENCRIPTADOR de texto (versión FLUO)</h2> 
+        </div>
+    </header>
+    <section>
+        <!-- Area 1: Cuadro de ingreso de texto para encriptar/desencriptar -->
+        <div class="area-1">
+            <textarea id="texto" cols="30" rows="10" placeholder="INGRESE TEXTO...                          (Solo con letras minúsculas, no deben ser utilizadas letras con acentos ni caracteres especiales)."></textarea>
+            <div class="botones1">
+                <button class="boton-e" onclick="encriptar()">Encriptar</button>
+                <button class="boton-d" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        <!-- Area 2: Cuadro de ingreso de vista de texto encriptado/desencriptado -->
+        </div>
+        <div id="area-2">
+            <div class="caja2">
+                <img id="img1" src="imagenes/Muñeco.png" alt="">
+                <img id="img2" src="imagenes/Texto1.png" alt="">
+                <h1 id="textoFinal"></h1>
+                <button id="boton-c" class="boton-c" onclick="copiar()">Copiar</button>
+            </div>
+        </div>
+    </section>
+    <!-- Pie de pagina -->
+    <footer>
+        <h3>By: PINAT, Juan Matias 😎</h3>
+        <div>
+            <a href="https://www.linkedin.com/in/juanmatiaspinat/" target="_blank"><img id="LinkedIn" src="imagenes/logoLinkedIn.png" alt=""></a>
+            <a href="https://www.github.com/juanmatiaspinat" target="_blank"><img id="Github" src="imagenes/logoGithub.png" alt=""></a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
