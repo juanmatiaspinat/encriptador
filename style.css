@@ -34,7 +34,7 @@ header{
 body{
     width: 100vw;
     height: 100vh;
-    background: url(imagenes/bg.jpg);
+    background: url(Imagenes/bg.jpg);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
