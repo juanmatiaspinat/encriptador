@@ -15,11 +15,15 @@ header{
 }
 
 .caja{
-    width: 90%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+}
+
+.caja h1{
+    color: #bfff00;
 }
 
 .caja h2{
@@ -30,27 +34,18 @@ header{
 body{
     width: 100vw;
     height: 100vh;
-    background: url(Imagenes/bg.jpg);
+    background: url(imagenes/bg.jpg);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     font-family: monospace;
 }
 
-.area-1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-}
-
 section{
-    width: 90%;
+    width: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
 }
 
 textarea{
@@ -63,21 +58,30 @@ textarea{
     border-radius: 5px;
 }
 
-#area-2{
+.area-1{
+    min-width: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50%;
-    margin: 0 0 0 0;
-    margin: 15px;
+}
+
+.area-2{
+    min-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin: 15 0 15 0;
     border-radius: 5px;
 }
 
 .caja2{
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 50%;
     margin: 0 0 0 0;
     background: white;
     padding: 30px;
@@ -86,7 +90,32 @@ textarea{
 
 .boton-e, .boton-d, .boton-c{
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 8px;
+    color: black;
+    
+}
+
+button:hover{
+    transform: scale(0.95);
+    transition: (0.6s);
+    cursor: pointer;
+}
+
+.boton-e{
+    background-color: #00FF5D;
+    font-weight: bold;
+    padding: 15px 20px 15px 20px;
+}
+
+.boton-d{
+    background-color: #BDE619;
+    font-weight: bold;
+    padding: 15px 20px 15px 20px;
+}
+
+.boton-c{
+    font-weight: bold;
+    padding: 15px 20px 15px 20px;
 }
 
 .boton-e, .boton-d, .boton-c{
@@ -120,4 +149,92 @@ footer h3{
 #LinkedIn{
     margin: 2px;
     width: 27px;
+}
+
+@media screen and (max-width: 800px){
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: auto;
+    }
+
+    section{
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caja2{
+        margin: 15px 0px 15px 0px;
+    }
+
+    .botones1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .boton-e, .boton-d{
+        margin: 5px;
+    }
+
+    #texto{
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .sub-encriptador{
+        display: none;
+    }
+
+    .area-2 img{
+        width: 200px;
+    }
+
+    .area-2 div{
+        /*display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;*/
+        border-radius: 5px;
+        width: 200px;
+    }
+
+}
+
+@media screen and (max-width: 375px /*350px*/){
+    body{
+        width: 100%;
+    }
+    
+    section{
+        margin: 0 0 0 0;
+    }
+
+    .caja h1{
+        margin-bottom: 15px;
+    }
+    
+    .caja{
+        flex-direction: column;
+    }
+
+    .caja2{
+        margin-top: 0px;
+    }
+
+    .area-1{
+        margin: 15px 0px 15px 0px;
+    }
+
+    .botones1{
+        width: 60%;
+    }
+
+    .botones1 button{
+        height: 70px;
+    }
+
 }
